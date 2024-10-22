@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --primary-color: #3C65F5; 
+    --secondary-color: #05264E; 
+    --box-background-color-1: #E6ECFF;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;        
+}
+/*****Header*****/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* ----------------------------Global Styles------------------------------ */
+
+:root {
+    --primary-color: #3C65F5; 
+    --secondary-color: #05264E; 
+    --box-background-color-1: #E6ECFF;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;        
+}
+
+/* ---------------------------- Header Section ------------------------------ */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+.nav-menu ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+.nav-menu ul li{
+    margin-right: 30px;  
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.btn-2 {
+   padding: 10px 40px;
+   border-radius: 10px;
+   border: none;
+   background-color: var(--primary-color);
+   
+}
+.btn-2 a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.btn-1 {
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+}
+.btn-1 a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    transition: all 0.1s ease;
+}
+.btn-2:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary-color) !important;
+}
+.btn-2 a:hover{
+    color: var(--primary-color) !important;
+}
+.btn-1 a:hover{
+    color: var(--primary-color);
+}
+
+ul li a.active{
+    border-bottom: 3px solid var(--primary-color);
+    transform: scale(1.1);
+}
+ul li a.active, ul li a:hover{
+    color: var(--primary-color);
+}
+
+ul li a:hover{
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    transform: scale(1.1);
+ }
+/******* Blog my partie ********/
+.blog{
+    background: red;
+    width: 100%;
+    height: 100vh;
+    
+}
+.blog .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #05264E;
+}
+.title{
+    background: green;
+    margin-left: 100px;
+}
+.container .navb{
+    background: whitesmoke ;
+    padding: 10px 50px;
+
+}
+.container .navb ul{
+    background: #3C65F5;
+    display: flex;
+    justify-content: space-around;
+}
+.navb  ul li{
+    padding: 20px;
+    list-style: none;
+    list-
+}
