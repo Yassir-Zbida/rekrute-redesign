@@ -299,6 +299,70 @@ ul li a:hover{
     margin-top: 40px;
 }
 
+/* ---------------------------- All Jobs Section ------------------------------ */
+
+.jobs-title{
+    text-align: center;
+    margin-top: 80px;
+    color: var(--secondary-color);
+}
+.jobs-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin:  40px 90px;
+}
+.job-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: transparent;
+    border: solid 1px var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
+}
+.job-card:hover{
+   transform: scale(1.02);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.job-card h2{
+    color: var(--primary-color);
+}
+.jobs-title h2{
+    font-size: 30px;
+}
+.job-cate {
+    display: flex;
+}
+.cate1{
+    margin-right: 10px;
+    color: #4F5665;
+    font-size: 12px;
+    background: #E7EBF1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.job-btn{
+    width: 35%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-color);
+    transition: 1s;
+}
+.job-btn:hover{
+    background: var(--secondary-color);
+}
+.job-btn a{
+    text-decoration: none;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
