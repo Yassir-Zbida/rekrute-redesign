@@ -361,8 +361,81 @@ ul li a:hover{
     color: white;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+.btn-55{
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.btn-5{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: solid 1px var(--primary-color);
+    background: transparent;
+    transition: 1s;
+}
+.btn-5 a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", sans-serif ;
+}
+.btn-5:hover{
+    transform: scale(1.08);
+}
 
-
+/* ---------------------------- Features Section ------------------------------ */
+.features-container{
+    display: flex;
+    margin: 40px 70px;
+    padding: 40px 40px;
+}
+.feature-right h2{
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--secondary-color);  
+}
+.feature-right span{
+    color: var(--primary-color);
+}
+.feature-right h1 span {
+    position: relative;
+    font-weight: 700;
+}
+.icon-box {
+    background: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    transition: 1s;
+}
+.icon-box:hover{
+    transform: scale(1.08);
+    background-color: var(--secondary-color);
+}
+.f-box-1{
+    display: flex;
+    flex-direction: row;
+}
+.f-box-1 h3{
+    margin-left: 20px;
+}
+.features-box {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+.feature-left img{
+    height: 580px;
+    width: 580px;
+}
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
