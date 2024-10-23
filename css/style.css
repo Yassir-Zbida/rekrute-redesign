@@ -294,6 +294,10 @@ ul li a:hover{
     font-size: 20px;
     padding-right: 10px;
 }
+.c-title{
+    text-align: center;
+    margin-top: 40px;
+}
 
 /* ---------------------------- Newsletter Section ------------------------------ */
 
