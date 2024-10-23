@@ -6,6 +6,7 @@
     --primary-color: #3C65F5; 
     --secondary-color: #05264E; 
     --box-background-color-1: #E6ECFF;
+    --text-color : #6C757D;
 }
 
 body {
@@ -104,7 +105,6 @@ ul li a:hover{
 .title{
    
     margin: 30px 0 0 150px;
-     font-family: poly;
 }
 .title h1{
     font-size: 45px;
@@ -114,7 +114,7 @@ ul li a:hover{
 .title h4{
     margin-top: -30px;
     font-size: 24px;
-    color: var(--text-color);
+    color: var(--);
 }
 .container .navb{
     padding: 10px 50px;
