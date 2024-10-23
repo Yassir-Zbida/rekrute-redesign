@@ -8,6 +8,13 @@
     --box-background-color-1: #E6ECFF;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
