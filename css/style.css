@@ -243,6 +243,58 @@ ul li a:hover{
 .cate-title p{
     margin-top: 5px; 
 }
+
+/* ---------------------------- cta Section ------------------------------ */
+
+.cta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 300px;
+    padding: 40px 40px;
+    border-radius: 10px;
+    background: white;
+    border: solid 1px #EEEEEE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
+}
+.cta:hover{
+    border: solid 1px var(--primary-color);
+    transform: scale(1.08);
+}
+.cta-title h3{
+    margin: 0;
+}
+.cta-title h2{
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 40px;
+}
+.cta-btn{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 2s;
+}
+.cta-btn:hover{
+   background-color: var(--secondary-color);
+}
+.cta-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.cta-btn i {
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
