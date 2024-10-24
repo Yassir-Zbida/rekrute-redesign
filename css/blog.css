@@ -182,7 +182,7 @@ ul li a:hover{
 }
 .blog-box{
     background-color: #ffffff;
-    border: 1px solid rgba(54, 96, 244, 0.1);
+    border: 1px solid rgba(54, 96, 244, 0.4);
     margin: 20px;
     border-radius: 20px;
     transition: all 0.8s ease;
@@ -190,6 +190,7 @@ ul li a:hover{
 }
 .blog-box:hover{
     transform: scale(1.03);
+    border: 1px solid rgba(54, 96, 244, 0.8);
 }
 .blog-img{
     width: 100%;
@@ -276,7 +277,7 @@ ul li a:hover{
     border: 1px solid rgba(54, 96, 244, 0.4);
 }
 .search:hover input{
-    width: 400px;
+     width: 360px; 
 }
 .search input{
     width: 0;
