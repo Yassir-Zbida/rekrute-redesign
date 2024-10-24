@@ -94,7 +94,7 @@ ul li a:hover{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('img/contact.png');
+    background-image: url(../images/backround\ contact.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
