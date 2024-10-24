@@ -97,6 +97,8 @@ ul li a:hover{
     margin-bottom: 66px;
     margin-left: 15%;
     height: 30%;
+    transition: 1s;
+    border: solid 1px var(--primary-color);
 }
 .first-div p {
    text-align: center;
@@ -178,6 +180,8 @@ ul li a:hover{
     background-color: #ffffff;
     width: 80%;
     height: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
 }
 .jobs-grid{
     display: grid;
@@ -204,6 +208,8 @@ ul li a:hover{
    border-radius: 10px;  
    margin-left: 5%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card1{
     display: flex;
@@ -215,6 +221,8 @@ ul li a:hover{
    border-radius: 10px;  
    margin-left: 5%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card2{
     display: flex;
@@ -226,6 +234,8 @@ ul li a:hover{
    border-radius: 10px;  
    margin-left: 5%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card3{
     display: flex;
@@ -238,6 +248,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -60%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card4{
     display: flex;
@@ -250,6 +262,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -60%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card5{
     display: flex;
@@ -262,6 +276,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -60%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card6{
     display: flex;
@@ -274,6 +290,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -120%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card7{
     display: flex;
@@ -286,6 +304,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -120%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card8{
     display: flex;
@@ -298,6 +318,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -120%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card9{
     display: flex;
@@ -310,6 +332,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -180%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card10{
     display: flex;
@@ -322,6 +346,8 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -180%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
 }
 .jobs-card11{
     display: flex;
@@ -334,6 +360,9 @@ ul li a:hover{
    margin-left: 5%;
    margin-top: -180%;
    padding: 0 20px;
+   border: solid 1px var(--primary-color);
+   transition: 1s;
+
 }
 button{
     width: 40%;
@@ -465,6 +494,8 @@ button{
     margin-top: -50%;
     margin-left: 15%;
     height: 30%;
+    transition: 1s;
+    border: solid 1px var(--primary-color);
 }
 .second-div p {
    text-align: center;
@@ -495,6 +526,8 @@ button{
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
 }
 
 .one-grid p{
@@ -523,6 +556,8 @@ button{
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
 }
 .two-grid p{
     text-align: center;
@@ -548,6 +583,8 @@ button{
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
 }
 .three-grid p{
     text-align: center;
@@ -573,6 +610,8 @@ button{
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
 }
 .four-grid p{
     text-align: center;
@@ -667,6 +706,10 @@ button{
     font-size: 20px;
     margin-right:10px ;
 }
+.anim:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+ }
 @media (max-width: 412px){
         
    
@@ -847,8 +890,8 @@ button{
     width: 70%;
     background-color:#C9DAF2;
     margin-top: -120%;
-    margin-left: 15%;
-    height: 40%;
+    margin-left: 12%;
+    height: 42%;
 }
 .titre-campany{
     display: flex;
@@ -915,5 +958,44 @@ button{
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+}
+.newsletter{
+   display: none;
+}
+/* Responsive For Footer Section */
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footer-bottom-links {
+        justify-content: start;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        grid-template-columns: 1fr; 
+        text-align: start;
+    }
+    .list-1 p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+    .footer-bottom-links{
+        justify-content: center;
+    }
 }
 } 
