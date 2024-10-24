@@ -436,6 +436,82 @@ ul li a:hover{
     height: 580px;
     width: 580px;
 }
+
+/* ---------------------------- Jobs Locations Section ------------------------------ */
+
+/* General Styles */
+.locations {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .location-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .location-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .location-title p {
+    color: #666;
+    font-size: 20px;
+  }
+  
+  /* Grid layout */
+  .loca-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+  }
+  
+  .location-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 1s;
+  }
+  #casablanca{
+    grid-column: span 2;
+  }
+  #madrid{
+    grid-column: span 2;
+  }
+ 
+  .location-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .location-box img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 120px;
+  }
+  
+  .location-box h3 {
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .cnt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .cnt p {
+    color: #333;
+    font-size: 16px;
+  }
+
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
