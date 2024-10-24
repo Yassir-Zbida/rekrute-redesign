@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
-/* ----------------------------Global Styles------------------------------ */
-
 :root {
     --primary-color: #3C65F5; 
     --secondary-color: #05264E; 
@@ -12,10 +8,8 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;        
+    background-color: #F2F6FD;        
 }
-
-/* ---------------------------- Header Section ------------------------------ */
 
 .header{
     display: flex;
@@ -42,15 +36,17 @@ body {
    padding: 10px 40px;
    border-radius: 10px;
    border: none;
-   background-color: var(--primary-color);
-   
+   background-color: var(--primary-color);  
 }
 .btn-2 a{
     font-size: 18px;
     text-decoration: none;
     color: white;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
     font-family: "Plus Jakarta Sans", sans-serif;
+
 }
 .btn-1 {
     background-color: transparent;
@@ -89,8 +85,535 @@ ul li a:hover{
     border-bottom: 3px solid var(--primary-color);
     transform: scale(1.1);
  }
-/* ---------------------------- Newsletter Section ------------------------------ */
+.first-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 70%;
+    background-color:#C9DAF2;
+    margin-top: 3%;
+    margin-bottom: 66px;
+    margin-left: 15%;
+    height: 30%;
+}
+.first-div p {
+   text-align: center;
+}
+.botton1{
+    border-radius: 10px;
+    border: none;
+    width: 15%;
+    height: 20%;
+    margin-top: 2%;   
+}
+.filter{
+       display: flex;
+       justify-content: center;
+       margin-top: 4%;
+       height: 30%;
+}
+#nav-search{
+    padding-left: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E6E5E5;
+   height: 50%; 
+    width: 30%;
+}
+.filter i{
+   position: absolute;
+  margin-left: 21%;
+  margin-top: 8px;
+  z-index: 10;
+}
+.options{
+  margin-top: 3%;
 
+}
+
+.option-search{
+    display: flex;
+    flex-direction: column; 
+    width: 9%;
+    margin-left: 30%;
+    margin-top: -1%;
+}
+.option-search1{
+    display: flex;
+    flex-direction: column; 
+    width: 9%;
+    margin-left: 43%;
+    margin-top: -36px;
+}
+.option-search2{
+    display: flex;
+    flex-direction: column;
+    width: 9%;
+    margin-left: 55%;
+    margin-top: -37px;
+}
+.button2{
+ width: 10%;
+ height: 20%;
+ margin-left: 67%;
+ margin-top: -30px;
+ border: none;
+ background-color:#3C65F5;
+}
+.JOBS-TITLE{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+
+
+}
+    
+.ALL{
+    margin-top: 5%;
+    padding-top: 2%;
+    border-radius: 10px;
+    margin: auto;   
+    background-color: #ffffff;
+    width: 80%;
+    height: 30%;
+}
+.jobs-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin-top: 7%;
+    height: 300%;
+    padding: 0 80px;
+}
+.filter-search{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color:#C9DAF2;  
+    height: 58.6%; 
+    border-radius: 10px;
+}
+.jobs-card{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   padding: 0 20px;
+}
+.jobs-card1{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   padding: 0 20px;
+}
+.jobs-card2{
+    display: flex;
+    flex-direction: column;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   padding: 0 20px;
+}
+.jobs-card3{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -60%;
+   padding: 0 20px;
+}
+.jobs-card4{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -60%;
+   padding: 0 20px;
+}
+.jobs-card5{
+    display: flex;
+    flex-direction: column;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -60%;
+   padding: 0 20px;
+}
+.jobs-card6{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -120%;
+   padding: 0 20px;
+}
+.jobs-card7{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -120%;
+   padding: 0 20px;
+}
+.jobs-card8{
+    display: flex;
+    flex-direction: column;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -120%;
+   padding: 0 20px;
+}
+.jobs-card9{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -180%;
+   padding: 0 20px;
+}
+.jobs-card10{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -180%;
+   padding: 0 20px;
+}
+.jobs-card11{
+    display: flex;
+    flex-direction: column;
+    grid-column: 4/5;
+    grid-row: 4/5;
+    background-color: #E6ECFF;
+    height: 50%;
+   border-radius: 10px;  
+   margin-left: 5%;
+   margin-top: -180%;
+   padding: 0 20px;
+}
+button{
+    width: 40%;
+    height: 10%;
+   border: none;
+   background-color: #3C65F5;
+   border-radius: 10px;
+   color: white;
+}
+.jobs-grid h3{
+  color: #3C65F5;
+}
+.chercher{
+    margin-top: 20%;
+    margin-left: 8%;
+    height: 4%;
+    width: 270%;
+}
+.chercher input {
+    border-radius: 10px;
+    border: none;
+}
+.chercher h3{
+    color: #000000;
+}
+.search-location{
+    margin-left: 8%;
+    height: 4%;
+    width: 270%;
+}
+.search-location h3{
+   color: black;
+}
+.chercher i {
+   z-index: 1;
+   margin-right: 70%;
+   margin-top: -20px;
+}
+.search-location i{
+     z-index: 1;
+    margin-right: 100%;
+    margin-top: -22px;
+}
+.chekbox{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ; 
+    padding: 0 8%; 
+}
+.categ h3{
+   margin-left: 9%;
+   color: #000000;
+}
+.number-categ{
+    background-color: #E6ECFF;
+    border-radius: 5px;
+    width: 6%;
+}
+.btn1{
+    margin-top: 5%;
+    height: 2%;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+.salary h3{
+    margin-left: 9%;
+    color: #000000;
+}
+.salary-prog{
+         background-color: #3C65F5;
+}
+.salary-prog div{
+    background-color:#3C65F5;
+    height: 8px;
+
+}
+.salary-prog .ONE{
+        margin-left: 1%; 
+        background-color: #3C65F5;  
+        position: absolute;
+        margin-top: -12px; 
+        border-radius: 10px;     
+}
+.salary-prog .TWO{
+    position: absolute;
+    background-color: #3C65F5; 
+    margin-left: 14%;
+    margin-top: -12px; 
+    border-radius: 10px;   
+}
+.salary-choose{
+    margin-top: 15%;
+    margin-left: 6%;
+}
+.salary-choose button{
+    margin-top: -15%;
+    margin-left: 50%;
+      height: 2%;
+}
+.tags-jobs h3{
+    margin-left: 9%;
+    color: #000;
+}
+.tags-option{
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+.tags-jobs{
+ margin-left: 3%;
+}
+.TAG{
+    display: flex;
+    justify-content: center;
+    background-color: #3C65F5;
+    border-radius: 10px;
+    width: 30%;
+    color: white;
+    margin-top: 2%;
+}
+.second-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 70%;
+    background-color:#C9DAF2;
+    margin-top: -50%;
+    margin-left: 15%;
+    height: 30%;
+}
+.second-div p {
+   text-align: center;
+}
+.titre-campany{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.grid-campany{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    margin-top: 5%;
+    padding: 0 130px;
+    margin-left: -5%;
+    
+}
+.one-grid{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color:white;
+    height: 90%;
+    width: 60%;
+    border-radius:10px;
+    margin-left: 30%;
+    padding: 20px;
+}
+
+.one-grid p{
+    text-align: center;
+
+}
+.one-grid div{
+    display: flex;
+   align-items: center;
+    background-color: #3C65F5;
+    border-radius: 10px;
+    padding: 10px;
+    height: 2%;
+    color: white;
+    
+}
+.two-grid{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color:white;
+    height: 90%;
+    width: 60%;
+    border-radius:10px;
+    margin-left: 30%;
+    padding: 20px;
+}
+.two-grid p{
+    text-align: center;
+}
+.two-grid div{
+    display: flex;
+    align-items: center;
+    background-color: #3C65F5;
+    border-radius: 10px;  
+    padding: 10px;
+    height: 2%;
+    color: white;
+}
+.three-grid{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color:white;
+    height: 90%;
+    width: 60%;
+    border-radius:10px;
+    margin-left: 30%;
+    padding: 20px;
+}
+.three-grid p{
+    text-align: center;
+}
+.three-grid div{
+    display: flex;
+    align-items: center;
+    background-color: #3C65F5;
+    border-radius: 10px; 
+    padding: 10px;
+    height: 2%;
+    color: white; 
+}
+.four-grid{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color:white;
+    height: 90%;
+    width: 60%;
+    border-radius:10px;
+    margin-left: 30%;
+    padding: 20px;
+}
+.four-grid p{
+    text-align: center;
+}
+.four-grid div{
+    display: flex;
+    align-items: center;
+    background-color: #3C65F5;
+    border-radius: 10px; 
+    padding: 10px;
+    height: 2%;
+    color: white;  
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    color: #333;
+    padding: 30px 80px;
+    align-items: start;
+    margin-top: 10%;
+}
+.socail-media i{
+    font-size: 25px;
+    color: var(--secondary-color);
+    padding: 20px 0px;
+}
+.list-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.list-2 ul, .list-2 ul li a{
+    list-style: none;
+    text-decoration: none;   
+} 
 .newsletter{
     display: flex;
     align-items: center;
@@ -99,6 +622,7 @@ ul li a:hover{
     background-color: var(--primary-color);
     padding: 20px 40px;
     border-radius: 20px;
+    margin-top: 8%;
     text-align: center;
 }
 .center-box h2{
@@ -142,36 +666,3 @@ ul li a:hover{
     font-size: 20px;
     margin-right:10px ;
 }
-
-/* ---------------------------- Footer Section ------------------------------ */
-
-.footer{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
-    color: #333;
-    padding: 30px 80px;
-    align-items: start;
-}
-.socail-media i{
-    font-size: 25px;
-    color: var(--secondary-color);
-    padding: 20px 0px;
-}
-.list-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.list-2 ul, .list-2 ul li a{
-    list-style: none;
-    text-decoration: none;
-    
-    
-} 
