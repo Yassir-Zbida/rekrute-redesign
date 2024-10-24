@@ -512,6 +512,44 @@ ul li a:hover{
     font-size: 16px;
   }
 
+/* ---------------------------- Recruiters grid Section ------------------------------ */
+
+.recruiters-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin: 60px 160px;
+    margin-bottom: 100px;
+}
+.company-box{
+    border: solid 1px #E6ECFF;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
+}
+.company-box:hover{
+    border: solid var(--primary-color) 1px;
+    transform: scale(1.1);
+}
+.btn-company{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border: none;
+}
+.btn-company a{
+    text-decoration: none;
+    color: white;
+}
+
+
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
