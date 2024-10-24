@@ -89,56 +89,296 @@ ul li a:hover{
     border-bottom: 3px solid var(--primary-color);
     transform: scale(1.1);
  }
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Plus Jakarta Sans', sans-serif;
+ }
+ 
  /************Hero*****************/
-#Heroo {
+ #Heroo {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     background-image: url('../images/backround\ contact.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 226px;
+ }
+ .mop {
+     text-align: center;
+ }
+ .txt h1 {
+     color: #FFFFFF;
+     font-size: 40px;
+     margin-bottom: 10px;
+ }
+ .txt h3 {
+     color: #FFFFFF;
+     font-size: 18px;
+     font-weight: 400;
+     margin-left: 100px;
+ }
+ #beyond{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .tixt h1:first-of-type{
+     font-size: 30px;
+     color: #A7A7A7;
+     margin-left: 600px;
+     margin-top: 130px;
+ }
+ .tixt h1:nth-child(2){
+     margin-left: 500px;
+     margin-top: 10px;
+ }
+ .tixt pre:first-of-type{
+     color: #5B5656;
+     margin-left: 260px;
+     margin-top: 24px;
+ }
+ .tixt p:first-of-type{
+     color: #5B5656;
+     margin-left: 130px;
+     margin-top: 8px;
+ }
+ /*********AboutUs**************/
+ #AboutUss {
+     display: grid;
+     grid-template-columns: 636px 734px;
+     grid-template-rows: 535px;
+     margin-top: 69px;
+     margin-left: 40px;
+ }
+ .imgAboutUs{
+     grid-area: 1 / 1 / 2 / 2;
+     background-image: url("../images/aboutUs.png");
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-position: center;
+ }
+ .txtAboutUs {
+     margin-left: 20px;
+ }
+ .txtAboutUs h1{
+     color: #000000;
+     margin-bottom: 20px;
+ }
+ .txtAboutUs pre{
+     color: #797777;
+ }
+ .txtAboutUs ul li{
+     margin-top: 30px;
+     margin-left: 20px;
+     color: #797777;
+ }
+ .txtAboutUs button {
+     margin-top: 13px;
+     margin-left: 15px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #1e2b50;
+     color: white;
+     padding: 10px 20px;
+     border-radius: 8px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease-in-out;
+     border: none;
+ }
+ .txtAboutUs button:hover {
+     background-color: #334a90;
+ }
+ #Meet{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .text h1{
+     display: flex;
+     justify-content: center;
+ }
+ .text h1:nth-child(1){
+     margin-top: 140px;
+     color: #6C757D;
+     font-size: 32px;
+ }
+ .text h1:nth-child(2){
+     margin-top: 35px;
+     color: #05264E; 
+     font-size: 48px;
+ }
+ .text pre{
+     margin-top: 10px;
+ }
+ #FaceCardsNeverDecline{
+     display: grid;
+     grid-template-columns: repeat(3, 378px);
+     grid-template-rows: repeat(1, 576px);
+     justify-content: center;
+    
+     gap: 52px;
+     margin-top: 66px;
+     
+ }
+ .cards{
+     background-image: url(img/Rectangle\ 19.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     justify-content: space-between;
+     height: 500px;
+     border-radius: 10px;
+     padding: 20px;
+     background-color: transparent;
+     border: solid 1px grey;
+ }
+ .cards img{
+     width: 166px;
+     height: 170px;
+     margin-top: 41px;
+ }
+ #TheyDoActually{
+     display: grid;
+     grid-template-columns: repeat(2, 378px);
+     grid-template-rows: repeat(1, 576px);
+     justify-content: center;
+     gap: 52px;
+     margin-top: 66px;
+ }
+ .boxes{
+     display: grid;
+     grid-template-columns: repeat(3, 390px);
+     grid-template-rows: repeat(1, 540px);
+     gap: 49px;
+     justify-content: center;
+     border: #3660F4;
+     
+ }
+ .Bottom{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+ }
+ .t span{
+     background-image: url(img/Event.png);
+     color: #3660F4;
+     font-size: 10px;
+ }
+ .Bottom pre:nth-child(2){
+     font-size: 11px;
+     color: #4F5665;
+ }
+ .proo{
+     display: flex;
+     flex-direction: row;
+ }
+ .news{
+     display: flex;
+     justify-content: flex-start;
+     margin-top: 130px;
+     margin-bottom:20px;
+     margin-left: 80px;
+     font-size: 25px;
+ }
+ .Inside {
+     display: grid;
+     grid-template-columns: 379px;
+     grid-template-rows: 262px 20px;
+     justify-content: center;
+     box-shadow: 0px 4px 8px rgb(0, 0, 0.3);
+     border-radius: 5%;
+ }
+ .Inside img{
+     height: 93.8%;
+ 
+ }
+ .stars{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+ .stars i{
+     font-size: 30px;
+     color: gold;
+     margin-right: 2px;
+ }
+ .socail{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-image: url(../images/backround\ contact.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 226px;
-}
-.mop {
-    text-align: center;
-}
-.txt h1 {
-    color: #FFFFFF;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.txt h3 {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
-    margin-left: 100px;
-}
-#beyond{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.tixt h1:first-of-type{
-    font-size: 30px;
-    color: #A7A7A7;
-    margin-left: 600px;
-    margin-top: 130px;
-}
-.tixt h1:nth-child(2){
-    margin-left: 500px;
-    margin-top: 10px;
-}
-.tixt pre:first-of-type{
-    color: #5B5656;
-    margin-left: 260px;
-    margin-top: 24px;
-}
-.tixt p:first-of-type{
-    color: #5B5656;
-    margin-left: 130px;
-    margin-top: 8px;
-}
+ }
+ .socail i{
+     font-size: 24px;
+ }
+ .diha {
+     text-align: center;
+ }
+ .socail i{
+     margin-right:15px;
+     margin-bottom:20px;
+ }
+ .diha h5{
+     margin-top:20px
+ }
+ body {
+     font-family: Arial, sans-serif;
+ }
+ 
+ .load-more-button {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #1e2b50; 
+     color: white;
+     padding: 5px 10px;
+     border-radius: 8px;
+     font-size: 12px;
+     width: 150px;
+     cursor: pointer;
+     transition: background-color 0.3s ease-in-out;
+     border: none;
+     margin-left: 145%;
+ }
+ 
+ .load-more-button:hover {
+     background-color: #334a90; 
+ }
+ 
+ 
+ .spinner {
+     width: 16px;
+     height: 16px;
+     margin-right: 10px;
+     border: 3px solid rgba(255, 255, 255, 0.3);
+     border-top: 3px solid white;
+     border-radius: 50%;
+     
+ }
+ 
+ 
+ .load-more-button:hover .spinner {
+     animation: spin 1s linear infinite;
+ }
+ 
+ @keyframes spin {
+     0% {
+         transform: rotate(0deg);
+     }
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+ 
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
