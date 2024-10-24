@@ -549,6 +549,61 @@ ul li a:hover{
     color: white;
 }
 
+/* ---------------------------- Testimonails Section ------------------------------ */
+
+.testimonail-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 60px 160px;
+    margin-bottom: 100px;
+
+}
+.row1{
+    display: flex;
+}
+.row3{
+    display: flex;
+    gap: 20px;
+}
+.row3 img{
+    height: 60px;
+    width: 60px;
+}
+.testimonail{
+    border-radius: 15px;
+    background-color: #E6ECFF;
+    padding: 40px;
+    font-display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    transition: 2s;
+}
+.testimonail:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    transform: scale(1.09);
+}
+.stars i{
+    color: gold;
+    font-size: 22px;
+    margin-left: 2px;
+} 
+.testi-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+.testi-title h2{
+    margin: 0;
+    font-size: 18px;
+}
+.testi-title p{
+    margin: 0;
+}
 
 /* ---------------------------- Newsletter Section ------------------------------ */
 
