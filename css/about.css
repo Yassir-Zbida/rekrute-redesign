@@ -89,6 +89,56 @@ ul li a:hover{
     border-bottom: 3px solid var(--primary-color);
     transform: scale(1.1);
  }
+ /************Hero*****************/
+#Heroo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('img/contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 226px;
+}
+.mop {
+    text-align: center;
+}
+.txt h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.txt h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 100px;
+}
+#beyond{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tixt h1:first-of-type{
+    font-size: 30px;
+    color: #A7A7A7;
+    margin-left: 600px;
+    margin-top: 130px;
+}
+.tixt h1:nth-child(2){
+    margin-left: 500px;
+    margin-top: 10px;
+}
+.tixt pre:first-of-type{
+    color: #5B5656;
+    margin-left: 260px;
+    margin-top: 24px;
+}
+.tixt p:first-of-type{
+    color: #5B5656;
+    margin-left: 130px;
+    margin-top: 8px;
+}
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
