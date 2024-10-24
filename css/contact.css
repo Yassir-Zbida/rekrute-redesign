@@ -8,6 +8,12 @@
     --box-background-color-1: #E6ECFF;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
@@ -115,6 +121,123 @@ ul li a:hover{
     flex-direction: column;
     margin: 90px;
     margin-top: 80px;
+}
+
+/*-----------------------------Formul Section------------------------------------*/
+
+.formul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.formul-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: -20px;
+}
+
+.formul-container textarea{
+    grid-column: span 2;
+}
+
+.contact-section{
+    margin: 90px;
+    
+}
+
+.contact h6{
+    font-size: 24px;
+    color: #3663F4;
+}
+
+.contact h2{
+    font-size: 36px;
+    color: #1C2D42;
+    margin: 20px 0;
+}
+
+.contact p{
+    font-size: 20px;
+    color: #6C757D;
+    margin-bottom: 40px;
+}
+
+input{
+    width: 406px;
+    height: 55px;
+    padding: 10px;
+    background-color: #C9DAF2;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 826px;
+    height: 271px;
+    padding: 10px;
+    background-color: #C9DAF2;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.checkbox-button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkbox input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.checkbox label{
+    font-size: 13px;
+    color: #1C2D42;
+}
+
+button{
+    padding: 10px;
+    background-color: #008cff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 252px;
+    height: 65px;
+    font-size: 36px;
+}
+
+button:hover{
+    background-color: #005bb5;
 }
 
 /* ---------------------------- Newsletter Section ------------------------------ */
