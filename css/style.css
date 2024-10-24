@@ -748,33 +748,115 @@ ul li a:hover{
 
 /* ---------------------------- Footer Section ------------------------------ */
 
-.footer{
+.footer {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
-    color: #333;
-    padding: 30px 80px;
-    align-items: start;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    padding: 20px 40px;
 }
-.socail-media i{
-    font-size: 25px;
+
+.footer > div {
+    padding: 10px;
+}
+
+.list-1 img {
+    margin-bottom: 10px;
+}
+
+.list-1 p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.social-media i {
+    font-size: 20px;
+    margin-right: 10px;
     color: var(--secondary-color);
-    padding: 20px 0px;
+    font-size: 24px;
 }
-.list-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.list-2 ul, .list-2 ul li a{
+
+ul {
     list-style: none;
-    text-decoration: none;
-    
-    
+    padding: 0;
 }
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #6c757d;
+    width: 80%;
+}
+
+.footer-bottom-links {
+    display: flex;
+}
+
+.footer-bottom-links li {
+    margin-left: 20px;
+}
+
+.footer-bottom-links li a {
+    color: #6c757d;
+}
+
+
+/* Responsive For Footer Section */
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footer-bottom-links {
+        justify-content: start;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        grid-template-columns: 1fr; 
+        text-align: start;
+    }
+    .list-1 p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+    .footer-bottom-links{
+        justify-content: center;
+    }
+}
+
