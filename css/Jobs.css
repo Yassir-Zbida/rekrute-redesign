@@ -1114,5 +1114,11 @@ h2 {
         display: block;
 
     }
+    .header .logo{
+        margin-left: -40px;
+    }
+    .header .tglbtn{
+        margin-right: -70px;
+    }
 }
 } 
