@@ -88,7 +88,7 @@ ul li a:hover{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('img/contact.png');
+    background-image: url(../images/contact.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,7 +144,7 @@ ul li a:hover{
 }
 .imgAboutUs{
     grid-area: 1 / 1 / 2 / 2;
-    background-image: url(img/aboutUs.png);
+    background-image: url('../images/aboutUs.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
@@ -389,12 +389,10 @@ body {
     }
 }
 @media (max-width: 412px) {
+    .header{
+        display: none;
+    }
     #Heroo{
-    align-items: center;
-    background-image: url('img/contact.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 153px;
     width: 412px;
     }
@@ -427,7 +425,7 @@ body {
         margin-left: 10px;
     }
     .imgAboutUs{
-        width: 96%
+        width: 100%
     }
     .txtAboutUs h1{
     font-size: 28px;
