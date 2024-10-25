@@ -23,6 +23,9 @@ body {
     justify-content: space-between;
     padding: 30px 80px;
 }
+.header-mobile {
+    display: none;
+}
 .nav-menu ul{
     list-style: none;
     text-decoration: none;
@@ -822,8 +825,8 @@ h2 {
     color: #6c757d;
 }
 
-
 /* Responsive For Footer Section */
+
 @media screen and (max-width: 768px) {
     .footer {
         grid-template-columns: repeat(2, 1fr); 
@@ -840,7 +843,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 412px) {
     .footer {
         grid-template-columns: 1fr; 
         text-align: start;
@@ -858,5 +861,150 @@ h2 {
     .footer-bottom-links{
         justify-content: center;
     }
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: white;
+        border-bottom: 1px solid #ddd; 
+    }
+    .hero{
+        width: 100%;
+        height: auto;
+        margin: 10px 30px; 
+        margin-top: -40px; 
+    }
+    .body{
+        overflow-x: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 60px;
+    }
+    .left-hero{
+        margin: 40px 100px;
+        margin-right: 20px;  
+    }
+    .right-hero img{
+        height: 270px;
+        width: 500px;
+    }
+    .left-hero p{
+        width: 100%;
+    }
+    .search-filter{
+        width: 100%;
+    }
+    .categories{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 0;
+        
+    }
+    .cate-box{
+      width: 450px;
+      margin-left: 60px;
+    }
+    .categories-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+    }
+    .cta{
+        display: none;
+    }
+    .jobs-grid{
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        margin-left: 40px; 
+    }
+    .job-btn{
+        width: 100%;
+    }
+    .jobs{
+        margin: 0;
+        padding: 0;
+        width: 550px;
+    }
+    .features-container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0 10px;
+        margin: 0;
+        width: 500px;
+    }
+    .body{
+        width: 500px;
+    }
+    .feature-right p{
+        width: 100%;
+    }
+    .location-title{
+        width: 500px;
+        margin-left: 40px;
+    }
+    .loca-grid{
+        width: 500px;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 40px;
+    }
+    #casablanca{
+        grid-column: span 1;
+    }
+    #madrid{
+        grid-column: span 1;
+    }
+    .recruiters-grid{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0;
+        margin: 0;
+    }
+    .company-box{
+        width: 400px;
+        margin-left: 60px;
+    }
+    .blog-grid{
+        grid-template-columns: repeat(1,1fr);
+        /* width: 500px; */
+        margin: 0px 50px;
+    }
+    .blog-box{
+        width: 500px;
+    }
+    .testimonail-grid{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px 60px;
+    }
+    .location-title{
+        margin-top: 80px;
+    }
+    .testimonail{
+        width: 400px;
+    }
+    .newsletter{
+       flex-direction: column;
+       width: 420px;
+       height: 230px;
+       margin: 40px 60px;
+    }
+    .img-left, .img-right{
+        display: none;
+    }
+    .location-title h2{
+        font-size: 20px;
+    }
+    .location-title p{
+        font-size: 16px;
+    }
 }
+
+
 
