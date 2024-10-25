@@ -590,7 +590,67 @@ h2 {
     }
 }
 
+/***** DROPDOWNMENU*******/
+.tglbtn{
+    color: var(--secondary-color);
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.dropdownmenu{
+    display: none;
+    z-index: 1;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    right: -20px;
+    top : 84px;
+    background: rgba(255, 255, 255);
+   
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.17s,0.885,0.32,1.275);
+}
+
+.dropdownmenu.open{
+   height: 40vh;
+}
+
+.dropdownmenu li{
+    transform: translateY(50px);
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+.dropdownmenu li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size : 20px;
+    font-weight: 700;
+    transition : all 0.8s ease;
+}
+.dropdownmenu li a:hover{
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    transform: scale(1.1);
+ }
+
+
 @media (max-width: 412px) {
+     /***DropDownMenu****/
+     .dropdownmenu{
+        display: block;
+    }
+    .header .nav-menu,
+    .header .buttons{
+        display: none;
+    } 
+    .tglbtn{
+        display: block;
+       
+    }
     .blog{
         width: 100%;
         height: auto;
@@ -667,6 +727,15 @@ h2 {
     .header{
         display: flex;
     }
+    .header .logo{
+        margin-left: -40px;
+    }
+    .header .tglbtn{
+        margin-right: -70px;
+    }
+    .header .logo img {
+        width: 150px;
+    }
     .title {
         margin: -20px -20px -20px 38px;
         text-align: center;
@@ -697,7 +766,7 @@ h2 {
         height: 20px;
         width: 67%;
         left: 101px;
-        top: 443px;
+        top: 265px;
     position: absolute;
     }
     .search input {
