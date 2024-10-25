@@ -15,22 +15,44 @@
 
     <header class="header">
         <div class="logo">
-           <img src="../images/Rekrute-logo.svg" alt="Rekrute Logo" >
+          <img src="../images/Rekrute-logo.svg" alt="Rekrute Logo" />
         </div>
         <div class="nav-menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="jobs.html">All Jobs</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="jobs.html">All Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+          </ul>
         </div>
         <div class="buttons">
-            <button class="btn-1"><a href="Register.html">Register</a></button>
-            <button class="btn-2"><a href="login.html">Login</a></button>
+          <button class="btn-1"><a href="Register.html">Register</a></button>
+          <button class="btn-2"><a href="login.html">Login</a></button>
         </div>
-    </header>
+        <div class="tglbtn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdownmenu">
+          <li><a href="../index.html">Home</a></li>
+            <li><a href="jobs.html">All Jobs</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+        </div>
+      </header>
+      <script>
+        const togglebtn = document.querySelector('.tglbtn')
+        const togglebtnicon = document.querySelector('.tglbtn i')
+        const dropdown = document.querySelector('.dropdownmenu')
+        togglebtn.onclick = function(){
+          dropdown.classList.toggle('open')
+          const isOpen = dropdown.classList.contains('open')
+          togglebtnicon.classList = isopen
+          ?'fa-solid fa-xmark'
+          :'fa-solid fa-bars'
+        }
+      </script>
 
     <!-------------------- Hero ----------------------->
 
