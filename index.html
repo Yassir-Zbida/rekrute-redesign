@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="images/favicon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
   <title>Rekrute - Your Career Connection</title>
 </head>
 
@@ -31,17 +32,29 @@
       <button class="btn-1"><a href="Register.html">Register</a></button>
       <button class="btn-2"><a href="login.html">Login</a></button>
     </div>
+    <div class="tglbtn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="dropdownmenu">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./pages/Jobs.html">All Jobs</a></li>
+        <li><a href="./Pages/about.html">About</a></li>
+        <li><a href="./Pages/contact.html">Contact</a></li>
+        <li><a href="./Pages/blog.html">Blog</a></li>
+    </div>
   </header>
-
-  <!-------------------- Header Mobile ------------------->
-
-  <header class="header-mobile">
-    <div class="logo">
-        <img src="images/Rekrute-logo.svg" alt="">
-    </div>
-    <div class="menu-icon">
-        <img src="images/menu-icon.svg" alt="">
-    </div>
+  <script>
+    const togglebtn = document.querySelector('.tglbtn')
+    const togglebtnicon = document.querySelector('.tglbtn i')
+    const dropdown = document.querySelector('.dropdownmenu')
+    togglebtn.onclick = function(){
+      dropdown.classList.toggle('open')
+      const isOpen = dropdown.classList.contains('open')
+      togglebtnicon.classList = isopen
+      ?'fa-solid fa-xmark'
+      :'fa-solid fa-bars'
+    }
+  </script>
   </header>
 
   <!-------------------- Hero Section ------------------->
