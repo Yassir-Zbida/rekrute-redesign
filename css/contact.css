@@ -656,6 +656,13 @@ h2 {
        
     }
 
+    .header .logo{
+        margin-left: -40px;
+    }
+    .header .tglbtn{
+        margin-right: -70px;
+    }
+
 }
 
 
