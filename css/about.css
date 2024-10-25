@@ -1,20 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-/* ----------------------------Global Styles------------------------------ */
-
-:root {
-    --primary-color: #3C65F5; 
-    --secondary-color: #05264E; 
-    --box-background-color-1: #E6ECFF;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
-body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;        
-}
-
 /* ---------------------------- Header Section ------------------------------ */
 
 .header{
@@ -22,6 +13,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 30px 80px;
+}
+.header-mobile {
+    display: none;
 }
 .nav-menu ul{
     list-style: none;
@@ -89,379 +83,524 @@ ul li a:hover{
     border-bottom: 3px solid var(--primary-color);
     transform: scale(1.1);
  }
- @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
- * {
-     margin: 0px;
-     padding: 0px;
-     box-sizing: border-box;
-     font-family: 'Plus Jakarta Sans', sans-serif;
- }
- 
- /************Hero*****************/
- #Heroo {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     background-image: url('../images/backround\ contact.png');
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     height: 226px;
- }
- .mop {
-     text-align: center;
- }
- .txt h1 {
-     color: #FFFFFF;
-     font-size: 40px;
-     margin-bottom: 10px;
- }
- .txt h3 {
-     color: #FFFFFF;
-     font-size: 18px;
-     font-weight: 400;
-     margin-left: 100px;
- }
- #beyond{
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- .tixt h1:first-of-type{
-     font-size: 30px;
-     color: #A7A7A7;
-     margin-left: 600px;
-     margin-top: 130px;
- }
- .tixt h1:nth-child(2){
-     margin-left: 500px;
-     margin-top: 10px;
- }
- .tixt pre:first-of-type{
-     color: #5B5656;
-     margin-left: 260px;
-     margin-top: 24px;
- }
- .tixt p:first-of-type{
-     color: #5B5656;
-     margin-left: 130px;
-     margin-top: 8px;
- }
- /*********AboutUs**************/
- #AboutUss {
-     display: grid;
-     grid-template-columns: 636px 734px;
-     grid-template-rows: 535px;
-     margin-top: 69px;
-     margin-left: 40px;
- }
- .imgAboutUs{
-     grid-area: 1 / 1 / 2 / 2;
-     background-image: url("../images/aboutUs.png");
-     background-repeat: no-repeat;
-     background-size: auto;
-     background-position: center;
- }
- .txtAboutUs {
-     margin-left: 20px;
- }
- .txtAboutUs h1{
-     color: #000000;
-     margin-bottom: 20px;
- }
- .txtAboutUs pre{
-     color: #797777;
- }
- .txtAboutUs ul li{
-     margin-top: 30px;
-     margin-left: 20px;
-     color: #797777;
- }
- .txtAboutUs button {
-     margin-top: 13px;
-     margin-left: 15px;
-     display: inline-flex;
-     align-items: center;
-     justify-content: center;
-     background-color: #1e2b50;
-     color: white;
-     padding: 10px 20px;
-     border-radius: 8px;
-     font-size: 16px;
-     cursor: pointer;
-     transition: background-color 0.3s ease-in-out;
-     border: none;
- }
- .txtAboutUs button:hover {
-     background-color: #334a90;
- }
- #Meet{
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- .text h1{
-     display: flex;
-     justify-content: center;
- }
- .text h1:nth-child(1){
-     margin-top: 140px;
-     color: #6C757D;
-     font-size: 32px;
- }
- .text h1:nth-child(2){
-     margin-top: 35px;
-     color: #05264E; 
-     font-size: 48px;
- }
- .text pre{
-     margin-top: 10px;
- }
- #FaceCardsNeverDecline{
-     display: grid;
-     grid-template-columns: repeat(3, 378px);
-     grid-template-rows: repeat(1, 576px);
-     justify-content: center;
-    
-     gap: 52px;
-     margin-top: 66px;
-     
- }
- .cards{
-     background-image: url(img/Rectangle\ 19.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     justify-content: space-between;
-     height: 500px;
-     border-radius: 10px;
-     padding: 20px;
-     background-color: transparent;
-     border: solid 1px grey;
- }
- .cards img{
-     width: 166px;
-     height: 170px;
-     margin-top: 41px;
- }
- #TheyDoActually{
-     display: grid;
-     grid-template-columns: repeat(2, 378px);
-     grid-template-rows: repeat(1, 576px);
-     justify-content: center;
-     gap: 52px;
-     margin-top: 66px;
- }
- .boxes{
-     display: grid;
-     grid-template-columns: repeat(3, 390px);
-     grid-template-rows: repeat(1, 540px);
-     gap: 49px;
-     justify-content: center;
-     border: #3660F4;
-     
- }
- .Bottom{
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
- }
- .t span{
-     background-image: url(img/Event.png);
-     color: #3660F4;
-     font-size: 10px;
- }
- .Bottom pre:nth-child(2){
-     font-size: 11px;
-     color: #4F5665;
- }
- .proo{
-     display: flex;
-     flex-direction: row;
- }
- .news{
-     display: flex;
-     justify-content: flex-start;
-     margin-top: 130px;
-     margin-bottom:20px;
-     margin-left: 80px;
-     font-size: 25px;
- }
- .Inside {
-     display: grid;
-     grid-template-columns: 379px;
-     grid-template-rows: 262px 20px;
-     justify-content: center;
-     box-shadow: 0px 4px 8px rgb(0, 0, 0.3);
-     border-radius: 5%;
- }
- .Inside img{
-     height: 93.8%;
- 
- }
- .stars{
-     display: flex;
-     justify-content: center;
-     margin-top: 20px;
- }
- .stars i{
-     font-size: 30px;
-     color: gold;
-     margin-right: 2px;
- }
- .socail{
+/************Hero*****************/
+#Heroo {
     display: flex;
- }
- .socail i{
-     font-size: 24px;
- }
- .diha {
-     text-align: center;
- }
- .socail i{
-     margin-right:15px;
-     margin-bottom:20px;
- }
- .diha h5{
-     margin-top:20px
- }
- body {
-     font-family: Arial, sans-serif;
- }
- 
- .load-more-button {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background-color: #1e2b50; 
-     color: white;
-     padding: 5px 10px;
-     border-radius: 8px;
-     font-size: 12px;
-     width: 150px;
-     cursor: pointer;
-     transition: background-color 0.3s ease-in-out;
-     border: none;
-     margin-left: 145%;
- }
- 
- .load-more-button:hover {
-     background-color: #334a90; 
- }
- 
- 
- .spinner {
-     width: 16px;
-     height: 16px;
-     margin-right: 10px;
-     border: 3px solid rgba(255, 255, 255, 0.3);
-     border-top: 3px solid white;
-     border-radius: 50%;
-     
- }
- 
- 
- .load-more-button:hover .spinner {
-     animation: spin 1s linear infinite;
- }
- 
- @keyframes spin {
-     0% {
-         transform: rotate(0deg);
-     }
-     100% {
-         transform: rotate(360deg);
-     }
- }
- 
-/* ---------------------------- Newsletter Section ------------------------------ */
-
-.newsletter{
-    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
-    margin: 80px 140px ;
-    background-color: var(--primary-color);
-    padding: 20px 40px;
-    border-radius: 20px;
+    background-image: url('img/contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 226px;
+    width: 1500px;
+}
+.mop {
     text-align: center;
 }
-.center-box h2{
-    font-size: 32px;
-    color: white;
+.txt h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
-.input{
-    background-color: white;
-    padding: 10px 20px;
+.txt h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 100px;
+}
+#beyond{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-radius: 10px;
 }
-.input input{
-    border: none;
-    outline: none;
-    font-size: 16px;
-    flex: 1;
-    padding: 10px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #6c757d;
-}   
-.subscribe-btn{
-    background-color: #3C65F5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
+.tixt h1{
+    font-size: 30px;
+    margin-left: 380px;  
 }
-.subscribe-btn:hover{
-    background-color: #2a4cc7;
+.tixt h2{
+    color: #A7A7A7;
+    margin-left: 470px;
+    margin-top: 75px;
 }
-.subscribe-btn i{
-    font-size: 20px;
-    margin-right:10px ;
+.about-description{
+    font-size: 15px;
+    color: #6c6c6c;
+    max-width: 800px;
+    margin-right: 150px ;
+    line-height: 1.6;
+    color: #5B5656;
+    margin-left: 130px;
+    margin-top: 8px;
 }
 
-/* ---------------------------- Footer Section ------------------------------ */
-
-.footer{
+/*********AboutUs**************/
+#AboutUss {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
-    color: #333;
-    padding: 30px 80px;
-    align-items: start;
+    grid-template-columns: 636px 734px;
+    grid-template-rows: 535px;
+    margin-top: 69px;
+    margin-left: 40px;
 }
-.socail-media i{
+.imgAboutUs{
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(img/aboutUs.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    border-radius: 5%;
+}
+.txtAboutUs {
+    margin-left: 20px;
+}
+.txtAboutUs h1{
+    color: #000000;
+    margin-bottom: 20px;
+}
+.txtAboutUs pre{
+    color: #797777;
+}
+.txtAboutUs ul li{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #797777;
+}
+.txtAboutUs button {
+    margin-top: 13px;
+    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e2b50; /* Dark navy blue */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+}
+.txtAboutUs button:hover {
+    background-color: #334a90;
+}
+#Meet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1{
+    display: flex;
+    justify-content: center;
+}
+.text h1:nth-child(1){
+    margin-top: 140px;
+    color: #6C757D;
+    font-size: 32px;
+}
+.text h1:nth-child(2){
+    margin-top: 35px;
+    color: #05264E; 
+    font-size: 48px;
+}
+.text pre{
+    margin-top: 10px;
+}
+#FaceCardsNeverDecline{
+    display: grid;
+    grid-template-columns: repeat(3, 378px);
+    grid-template-rows: repeat(1, 576px);
+    justify-content: center;
+   
+    gap: 52px;
+    margin-top: 66px;
+    
+}
+.cards{
+    background-image: url(img/Rectangle\ 19.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: transparent;
+    border: solid 1px grey;
+}
+.cards img{
+    width: 166px;
+    height: 170px;
+    margin-top: 41px;
+}
+#TheyDoActually{
+    display: grid;
+    grid-template-columns: repeat(2, 378px);
+    grid-template-rows: repeat(1, 576px);
+    justify-content: center;
+    gap: 52px;
+    margin-top: 66px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    grid-template-rows: repeat(1, 540px);
+    gap: 49px;
+    justify-content: center;
+    border: #3660F4;
+    
+}
+.Bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.t span{
+    background-image: url(img/Event.png);
+    color: #3660F4;
+    font-size: 10px;
+}
+.Bottom pre:nth-child(2){
+    font-size: 13px;
+    color: #4F5665;
+}
+.proo{
+    display: flex;
+    flex-direction: row;
+}
+.news{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 130px;
+    margin-bottom:20px;
+    margin-left: 80px;
     font-size: 25px;
+}
+.Inside1{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-columns: 379px;
+    grid-template-rows: 262px 20px;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0.3);
+    border-radius: 5%;
+}
+.Inside2{
+    grid-area: 1 / 2 / 2 / 2;
+    display: grid;
+    grid-template-columns: 379px;
+    grid-template-rows: 262px 20px;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0.3);
+    border-radius: 5%;
+}
+.Inside3{
+    grid-area: 1 / 3 / 2 / 4;
+    display: grid;
+    grid-template-columns: 379px;
+    grid-template-rows: 262px 20px;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0.3);
+    border-radius: 5%;
+}
+.Inside img{
+    height: 93.8%;
+
+}
+.stars{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.stars i{
+    font-size: 30px;
+    color: gold;
+    margin-right: 2px;
+}
+.socail{
+   display: flex;
+}
+.socail i{
+    font-size: 24px;
+}
+.diha {
+    text-align: center;
+}
+.socail i{
+    margin-right:15px;
+    margin-bottom:20px;
+}
+.diha h5{
+    margin-top:20px
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.load-more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e2b50; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+}
+
+.load-more-button:hover {
+    background-color: #334a90; 
+}
+#buttonReload{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.spinner {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    
+}
+
+
+.load-more-button:hover .spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 412px) {
+    #Heroo{
+    align-items: center;
+    background-image: url('img/contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 153px;
+    width: 412px;
+    }
+    .txt h1 {
+        font-size: 20px;
+        margin-left: 100px
+    }
+    .txt h3 {
+        font-size: 14px;
+    }
+    .tixt h2{
+        font-size: 20px;
+        margin-left: 190px;
+        margin-top: 20px;
+        }
+    .tixt h1{
+        margin-left: 130px;
+        font-size: 20px
+        }
+        .tixt p{
+        margin-left: 135px;
+        margin-top: 18px;
+        font-size: 10px;
+        width: 200px
+        }
+    #AboutUss{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 254px 185px;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+    .imgAboutUs{
+        width: 96%
+    }
+    .txtAboutUs h1{
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 8px;
+    }
+    .txtAboutUs pre{
+    font-size: 10px;
+    color: #797777;
+    }
+    .txtAboutUs ul li{  
+    margin-top: 13px;
+    margin-left: 1px;
+    }
+    .txtAboutUs button {
+    margin-top: 15px;
+    margin-left: 0px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 8px;
+    }
+    .text h1:nth-child(1){
+    margin-top: 25px;
+    color: #6C757D;
+    font-size: 18px;
+    }
+    .text h1:nth-child(2){
+    margin-top: 0px;
+    color: #05264E; 
+    font-size: 29px;
+    }
+    .text pre{
+    margin-top: 5px;
+    font-size: 11px
+    }
+    #Meet{
+        margin-top:150px 
+    }
+    #FaceCardsNeverDecline{
+    grid-template-columns: repeat(1, 358px);
+    grid-template-rows: repeat(3, 551px);
+    gap: 0px;
+    margin-top: 30px;
+    }
+    #TheyDoActually{
+    grid-template-columns: repeat(1, 358px);
+    grid-template-rows: repeat(2, 551px);
+    gap: 0px;
+    margin-top: 0px;
+    }
+    .boxes {
+        grid-template-columns: 0px;
+        margin-left: 0px;
+    }
+    .Inside2, .Inside3{
+    display: none;
+    }
+    
+    .news {
+        margin-top: -39px;
+        margin-bottom: 16px;
+        font-size: 15px;
+    }
+    
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.footer > div {
+    padding: 10px;
+}
+
+.list-1 img {
+    margin-bottom: 10px;
+}
+
+.list-1 p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.social-media i {
+    font-size: 20px;
+    margin-right: 10px;
     color: var(--secondary-color);
-    padding: 20px 0px;
+    font-size: 24px;
 }
-.list-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.list-2 ul, .list-2 ul li a{
+
+ul {
     list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
     text-decoration: none;
-    
-    
-} 
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #6c757d;
+    width: 80%;
+}
+
+.footer-bottom-links {
+    display: flex;
+}
+
+.footer-bottom-links li {
+    margin-left: 20px;
+}
+
+.footer-bottom-links li a {
+    color: #6c757d;
+}
+
+/* Responsive For Footer Section */
+
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footer-bottom-links {
+        justify-content: start;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .footer {
+        grid-template-columns: 1fr; 
+        text-align: start;
+    }
+    .list-1 p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+    .footer-bottom-links{
+        justify-content: center;
+    }
+}
