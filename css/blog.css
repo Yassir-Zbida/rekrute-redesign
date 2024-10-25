@@ -536,9 +536,12 @@ ul li a:hover{
         margin: 10px;
         
     }
+    .header {
+        display: none;
+    }
     .puplarbox img {
-        width: 15%;
-        height: 9vh;
+        width: 22%;
+        height: 13vh;
         border-radius: 50%;
     }
     .puplarbox h4 a {
@@ -550,7 +553,17 @@ ul li a:hover{
         color: #4F5665;
         font-size: 11px;
     }
-    
+    .tags .tag-clouds{
+        margin-top: -30px;
+        padding: 20px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-size: 40px;
+    }
     .tags .tag-clouds div {
         font-size: 8px;
     }
@@ -587,7 +600,12 @@ ul li a:hover{
         flex-direction: column;
         align-items: center;
     }
-
+    .newsletter{
+        display: none;
+    }
+    .header{
+        display: flex;
+    }
     .title {
         margin: -20px -20px -20px 38px;
         text-align: center;
@@ -618,7 +636,7 @@ ul li a:hover{
         height: 20px;
         width: 67%;
         left: 101px;
-        top: 437px;
+        top: 520px;
     position: absolute;
     }
     .search input {
@@ -666,5 +684,70 @@ ul li a:hover{
     .sidebar {
         text-align: center;
     }
-
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        color: #333;
+        padding: 30px 80px;
+        align-items: start;
+    }
+    .footer {
+        grid-template-columns: 1fr; 
+        text-align: start;
+    }
+    .list-1 p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+    .footer-bottom-links{
+        justify-content: center;
+    }
 }
+
+
+
+
+
+/* Responsive For Footer Section
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footer-bottom-links {
+        justify-content: start;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        grid-template-columns: 1fr; 
+        text-align: start;
+    }
+    .list-1 p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+    .footer-bottom-links{
+        justify-content: center;
+    }
+} */
