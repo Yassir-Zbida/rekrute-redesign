@@ -6,6 +6,11 @@
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+:root {
+    --primary-color: #3C65F5; 
+    --secondary-color: #05264E; 
+    --box-background-color-1: #E6ECFF;
+}
 /* ---------------------------- Header Section ------------------------------ */
 
 .header{
