@@ -448,7 +448,7 @@ ul li a:hover{
   
   .location-title {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   
   .location-title h2 {
@@ -512,6 +512,186 @@ ul li a:hover{
     font-size: 16px;
   }
 
+/* ---------------------------- Recruiters grid Section ------------------------------ */
+
+.recruiters-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin: 60px 160px;
+    margin-bottom: 100px;
+}
+.company-box{
+    border: solid 1px #E6ECFF;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: 1s;
+}
+.company-box:hover{
+    border: solid var(--primary-color) 1px;
+    transform: scale(1.1);
+}
+.btn-company{
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border: none;
+}
+.btn-company a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------------------- Testimonails Section ------------------------------ */
+
+.testimonail-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 60px 160px;
+    margin-bottom: 100px;
+
+}
+.row1{
+    display: flex;
+}
+.row3{
+    display: flex;
+    gap: 20px;
+}
+.row3 img{
+    height: 60px;
+    width: 60px;
+}
+.testimonail{
+    border-radius: 15px;
+    background-color: #E6ECFF;
+    padding: 40px;
+    font-display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    transition: 2s;
+}
+.testimonail:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    transform: scale(1.09);
+}
+.stars i{
+    color: gold;
+    font-size: 22px;
+    margin-left: 2px;
+} 
+.testi-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+.testi-title h2{
+    margin: 0;
+    font-size: 18px;
+}
+.testi-title p{
+    margin: 0;
+}
+/* ---------------------------- Our Blog Section ------------------------------ */
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 60px 160px;
+    margin-bottom: 100px;
+}
+.blog-box{
+    background-color: #ffffff;
+    border: 1px solid rgba(54, 96, 244, 0.1);
+    margin: 10px;
+    border-radius: 20px;
+    transition: all 0.8s ease;
+    box-shadow: 5px 4px 25px rgba(0, 0, 14, 0.071);
+}
+.blog-box:hover{
+    transform: scale(1.03);
+}
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+.blog-img img{
+    width: 95%;
+    height: 90%;
+    margin: 10px;
+    border-radius: 20px;
+    background-size: 50px 50px;
+}
+.blog-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0 0 20px;
+
+}
+.blog-text button{
+    background: rgba(66, 148, 255, 0.5);
+    border: none;
+    color: #3660F4;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 3px;
+    cursor: pointer;
+}
+.blog-text .blog-title{
+    text-decoration: none;
+    font-size: 19px;
+    color: var(--secondary-color);
+    font-weight: 800;
+    transition: all 0.8s ease;
+}
+.blog-text .blog-title:hover{
+    transform: scale(1.03);
+}
+.blog-text p{
+    font-size: 15px;
+    color: #4F5665;
+    font-weight: 500;
+}
+.usertime{
+    display: flex;
+    justify-content: space-around;
+}
+.usertime .user{
+    display: flex;
+    justify-content: space-around;
+}
+.user i{
+    font-size: 50px;
+    color: #c8cbcb;
+    margin: 10px 55px 0 0;
+}
+.user h5{
+   transform: translate(-35px,-9px);
+   font-size: 14px;
+   color: #4F5665;
+}
+.usertime .time{
+    margin: 25px 0 0 10px;
+    font-weight: 500;
+    color: #4F5665;
+    font-size: 15px;
+}
+
 /* ---------------------------- Newsletter Section ------------------------------ */
 
 .newsletter{
@@ -568,33 +748,115 @@ ul li a:hover{
 
 /* ---------------------------- Footer Section ------------------------------ */
 
-.footer{
+.footer {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
-    color: #333;
-    padding: 30px 80px;
-    align-items: start;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    padding: 20px 40px;
 }
-.socail-media i{
-    font-size: 25px;
+
+.footer > div {
+    padding: 10px;
+}
+
+.list-1 img {
+    margin-bottom: 10px;
+}
+
+.list-1 p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.social-media i {
+    font-size: 20px;
+    margin-right: 10px;
     color: var(--secondary-color);
-    padding: 20px 0px;
+    font-size: 24px;
 }
-.list-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.list-2 ul, .list-2 ul li a{
+
+ul {
     list-style: none;
-    text-decoration: none;
-    
-    
+    padding: 0;
 }
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #6c757d;
+    width: 80%;
+}
+
+.footer-bottom-links {
+    display: flex;
+}
+
+.footer-bottom-links li {
+    margin-left: 20px;
+}
+
+.footer-bottom-links li a {
+    color: #6c757d;
+}
+
+
+/* Responsive For Footer Section */
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .footer-bottom-links {
+        justify-content: start;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        grid-template-columns: 1fr; 
+        text-align: start;
+    }
+    .list-1 p {
+        font-size: 14px;
+        color: #6c757d;
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: start;
+    }
+    .footer-bottom-links{
+        justify-content: center;
+    }
+}
+

@@ -93,7 +93,26 @@ ul li a:hover{
 
 
  /******************************** Blog my partie Mahjoub Echcherkaoui*****************************************/
+/* @media (max-width:412px){
+    .blog{
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 2100px;
+    }
+    .blog .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title{
+   
+        margin: 15px 0 0 150px;
+     
+    }
 
+
+} */
 
 .blog{
     width: 100%;
@@ -476,6 +495,7 @@ ul li a:hover{
     margin-right:10px ;
 }
 
+
 /* ---------------------------- Footer Section ------------------------------ */
 
 .footer{
@@ -507,4 +527,144 @@ ul li a:hover{
     text-decoration: none;
     
     
+}
+
+@media (max-width: 412px) {
+    .blog{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        
+    }
+    .puplarbox img {
+        width: 15%;
+        height: 9vh;
+        border-radius: 50%;
+    }
+    .puplarbox h4 a {
+        font-size: 14px;
+        margin-bottom: 25px;
+        color: #222d3c;
+    }
+    .puplarbox span {
+        color: #4F5665;
+        font-size: 11px;
+    }
+    
+    .tags .tag-clouds div {
+        font-size: 8px;
+    }
+
+    .blog .container {        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .logo img {
+        width: 150px;
+    }
+    .container .navb ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .btn-1, .btn-2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .blog .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        margin: -20px -20px -20px 38px;
+        text-align: center;
+    
+    }
+    .title h4 {
+        margin-top: -30px;
+        font-size: 15px;
+        color: var(--text-color);
+    }
+    .navb ul {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    .container .navb {
+        padding: 10px 54px;
+        margin: 0 0 0 63px;
+    }
+    .navb ul li {
+        font-size: 14px;
+        padding: 1px 17px;
+        transition: all 0.3s ease;
+    }
+    
+    .sidebar-search .search {
+        display: flex;
+        height: 20px;
+        width: 67%;
+        left: 101px;
+        top: 437px;
+    position: absolute;
+    }
+    .search input {
+        width: calc(90% - 20px);
+        margin: 0 auto;
+        width: 0;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        transition: 0.8s;
+        background: transparent;
+    }
+    .search:hover input {
+        width: 230px;
+    }
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-box {
+        width: 400px;
+    }
+
+    .blog-img img {
+        height: auto;
+    }
+
+    .sidebar-search {
+        width: 90%;
+        margin-left: 56px;
+        margin-top: 20px;
+    }
+    .description p{
+        font-size: 10px;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
 }
