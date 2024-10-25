@@ -625,35 +625,79 @@ button{
     height: 2%;
     color: white;  
 }
-.footer{
+.footer {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 30px;
-    color: #333;
-    padding: 30px 80px;
-    align-items: start;
-    margin-top: 10%;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    padding: 20px 40px;
 }
-.socail-media i{
-    font-size: 25px;
+
+.footer > div {
+    padding: 10px;
+}
+
+.list-1 img {
+    margin-bottom: 10px;
+}
+
+.list-1 p {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.social-media i {
+    font-size: 20px;
+    margin-right: 10px;
     color: var(--secondary-color);
-    padding: 20px 0px;
+    font-size: 24px;
 }
-.list-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.list-2 ul, .list-2 ul li a{
+
+ul {
     list-style: none;
-    text-decoration: none;   
-} 
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    color: #6c757d;
+    width: 80%;
+}
+
+.footer-bottom-links {
+    display: flex;
+}
+
+.footer-bottom-links li {
+    margin-left: 20px;
+}
+
+.footer-bottom-links li a {
+    color: #6c757d;
+}
 .newsletter{
     display: flex;
     align-items: center;
@@ -732,6 +776,17 @@ button{
         height: 18%;
         margin-top: 2%; 
     }
+    .ALL{
+        margin-top: 5%;
+        padding-top: 2%;
+        border-radius: 10px;
+        margin: auto;   
+        background-color: #ffffff;
+        width: 80%;
+        height: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        transition: 1s;
+    }
     .filter{
         display: flex;
         justify-content: center;
@@ -775,7 +830,7 @@ button{
 }
 .button2{
     width: 30%;
-    height: 20%;
+    height: 10%;
     margin-left: 60%;
     margin-top: 20px;
     border: none;
@@ -914,7 +969,7 @@ button{
     grid-column: 1/2;
     grid-row: 1/2;
     background-color:white;
-    height: 40%;
+    height: 70%;
     width: 60%;
     border-radius:10px;
     margin-left: 30%;
@@ -927,11 +982,12 @@ button{
     grid-column: 1/2;
     grid-row: 2/3;
     background-color:white;
-    height: 90%;
+    height: 70%;
     width: 60%;
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+    margin-top: 4%;
 }
 .three-grid{
     display: flex;
@@ -940,11 +996,12 @@ button{
     grid-column: 1/2;
     grid-row: 3/4;
     background-color:white;
-    height: 90%;
+    height: 70%;
     width: 60%;
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+    margin-top: 8%;
 }
 .four-grid{
     display: flex;
@@ -953,11 +1010,13 @@ button{
     grid-column: 1/2;
     grid-row: 4/5;
     background-color:white;
-    height: 90%;
+    height: 70%;
     width: 60%;
     border-radius:10px;
     margin-left: 30%;
     padding: 20px;
+    margin-top: 12%;
+   
 }
 .newsletter{
    display: none;
